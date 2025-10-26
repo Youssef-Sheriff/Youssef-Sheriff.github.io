@@ -1,286 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="mediaqueries.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Youssef Sherif - Software Engineer & Backend Developer">
+    <title>Youssef Sherif | Software Engineer</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <nav id="desktop-nav">
-    <div class="logo">Youssef Sherif</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <nav id="hamburger-nav">
-    <div class="logo">Youssef Sherif</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </div>
-    </div>
-  </nav>
-  <section id="profile">
-    <div class="section__pic-container">
-      <img src="./assets/profile-pic.png" alt="Youssef Sherif profile picture" />
-    </div>
-    <div class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">Youssef Sherif</h1>
-      <p class="section__text__p2">Backend Developer</p>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/my_resume.pdf', '_blank')">
-          Download CV
-        </button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-          Contact Info
-        </button>
-      </div>
-      <div id="socials-container">
-        <a href="https://linkedin.com/in/youssef--sherif" target="_blank">
-          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" />
-        </a>
-        <a href="https://github.com/Youssef-Sheriff" target="_blank">
-          <img src="./assets/github.png" alt="My Github profile" class="icon" />
-        </a>
-      </div>
-
-    </div>
-  </section>
-  <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-      <div class="section__pic-container">
-        <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
-      </div>
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-            <h3>Experience</h3>
-            <p>0+ years <br />Backend Development</p>
-          </div>
-          <div class="details-container">
-            <img src="./assets/education.png" alt="Education icon" class="icon" />
-            <h3>Education</h3>
-
-            <b>Computer Science</b>
-
-            <p>B.Sc. Bachelors Degree</p>
-
-          </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#home" class="logo">Youssef<span>.</span></a>
+                
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </div>
-        <div class="text-container">
-          <p>
-            I bring a strong foundation in C++, C#, and Java programming, along with problem-solving skills and a solid
-            CS background. Eager to learn, I'm well-prepared to contribute to software development across the lifecycle,
-            with a focus on backend development and basic web development knowledge.
-          </p>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
-  </section>
-  <section id="experience">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Experience</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Backend Developer</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>C++</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>C#</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Java</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>(OOP)</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Data Structure</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Algorithms</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">Backend Developer</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Database</h3>
-                <p>Bascis</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Problem Solving</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Git</h3>
-                <p>Good</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Github</h3>
-                <p>Good</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Command Line</h3>
-                <p>Bascis</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Python</h3>
-                <p>Bascis</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-  </section>
-  <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/Project-1.jpg" alt="Project 1" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Pet Friends App</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://github.com/Youssef-Sheriff/MyProjects/blob/main/00_Animals/Program.cs', '_blank')">
-              Github
-            </button>
-
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-2.jpg" alt="Project 2" class="project-img" />
-          </div>
-
-          <h2 class="experience-sub-title project-title">Command Line</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://github.com/Youssef-Sheriff/MyProjects/blob/main/FileSystemCommandLine/Program.cs', '_blank')">
-              Github
-            </button>
-
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-3.jpg" alt="Project 3" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Math Parser</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://github.com/Youssef-Sheriff/MyProjects/tree/main/MathExpressionEvaluator', '_blank')">
-              Github
-            </button>
-
-          </div>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-  </section>
-  <section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-        <p><a href="mailto:sherfiy766@gmail.com" target="_blank">Gmail</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-        <p><a href="https://www.linkedin.com/in/youssef--sherif/" target="_blank">LinkedIn</a></p>
-
-      </div>
-    </div>
-  </section>
-  <footer>
-    <nav>
-      <div class="nav-links-container">
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
     </nav>
-    <p>Copyright &#169; 2024 Youssef Sherif. All Rights Reserved.</p>
-  </footer>
-  <script src="script.js"></script>
-</body>
 
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h3>Hello, I'm</h3>
+                <h1>Youssef Sherif</h1>
+                <h2>Software Engineer & Backend Developer</h2>
+                <p>Backend Developer specializing in .NET Core and Java Spring Boot. Building scalable systems and solving complex problems.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    <a href="#projects" class="btn btn-secondary">View Projects</a>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://github.com/Youssef-Sheriff" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/youssef--sherif" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:sherify766@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Backend Developer & Problem Solver</h3>
+                    <p>I'm a fresh Computer Science graduate from Modern Academy with a <strong>GPA of 3.5/4.0</strong>. I specialize in building scalable backend systems using .NET Core and Java Spring Boot.</p>
+                    
+                    <p>My experience includes developing RESTful APIs, implementing authentication systems, and working with SQL Server and MySQL databases. I've also mentored over 150 students in programming fundamentals.</p>
+                    
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <strong>Education</strong>
+                                <p>B.Sc. Computer Science - GPA: 3.5/4.0</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Location</strong>
+                                <p>Cairo, Egypt</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stats">
+                    <div class="stat-box">
+                        <h3>5+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>150+</h3>
+                        <p>Students Mentored</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>3</h3>
+                        <p>Internships</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jul 2025 - Oct 2025</div>
+                        <h3>Full Stack Intern</h3>
+                        <h4>Fixed Solutions (Fixed Global)</h4>
+                        <p>Developed CRUD APIs using Django REST Framework with authentication and validation. Built CLI tools using Node.js to automate workflows.</p>
+                        <div class="tags">
+                            <span>Django</span>
+                            <span>REST API</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Dec 2024 - Jul 2025</div>
+                        <h3>Programming Instructor</h3>
+                        <h4>Digital Egypt Cubs Initiative (DECI)</h4>
+                        <p>Mentored 150+ students in programming fundamentals and algorithms. Designed learning materials and guided students in building applications.</p>
+                        <div class="tags">
+                            <span>Teaching</span>
+                            <span>Mentoring</span>
+                            <span>Algorithms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jun 2024 - Dec 2024</div>
+                        <h3>.NET Web Developer Trainee</h3>
+                        <h4>Digital Egypt Pioneers Initiative (DEPI) / ITI</h4>
+                        <p>Built RESTful APIs using ASP.NET Core, EF Core, and SQL Server. Developed Library Management System following MVC patterns.</p>
+                        <div class="tags">
+                            <span>.NET Core</span>
+                            <span>SQL Server</span>
+                            <span>Agile</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-tag">Current</span>
+                        <h3>Employee Management System</h3>
+                    </div>
+                    <p>Backend system for managing employees and departments using RESTful APIs with validation and error handling.</p>
+                    <div class="project-tech">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>MySQL</span>
+                    </div>
+                    <a href="https://github.com/Youssef-Sheriff/employee-management-system" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-tag">Graduation</span>
+                        <h3>BoneX</h3>
+                    </div>
+                    <p>AI-assisted X-ray analysis platform. Lead backend developer implementing authentication and appointment booking APIs.</p>
+                    <div class="project-tech">
+                        <span>ASP.NET Core</span>
+                        <span>SQL Server</span>
+                        <span>JWT</span>
+                    </div>
+                    <a href="https://github.com/Youssef-Sheriff/BoneX" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-tag">Freelance</span>
+                        <h3>Ne3ma</h3>
+                    </div>
+                    <p>Food waste reduction platform with role-based API access and comprehensive food item management.</p>
+                    <div class="project-tech">
+                        <span>ASP.NET Core</span>
+                        <span>EF Core</span>
+                        <span>SQL Server</span>
+                    </div>
+                    <a href="https://github.com/Youssef-Sheriff/Ne3ma" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-tag">Personal</span>
+                        <h3>Survey Basket</h3>
+                    </div>
+                    <p>Survey and voting platform following MVC pattern with secure validation via FluentValidation.</p>
+                    <div class="project-tech">
+                        <span>ASP.NET MVC</span>
+                        <span>EF Core</span>
+                        <span>SQL Server</span>
+                    </div>
+                    <a href="https://github.com/Youssef-Sheriff/SurveyBasket" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-tag">Training</span>
+                        <h3>LibraCore</h3>
+                    </div>
+                    <p>Library management system with CRUD operations, MVC architecture, and database modeling.</p>
+                    <div class="project-tech">
+                        <span>ASP.NET Core</span>
+                        <span>EF Core</span>
+                        <span>SQL Server</span>
+                    </div>
+                    <a href="https://github.com/Youssef-Sheriff/LibraCore" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Java</span>
+                        <span class="skill-item">C#</span>
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">C++</span>
+                        <span class="skill-item">SQL</span>
+                        <span class="skill-item">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-layer-group"></i> Frameworks</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Spring Boot</span>
+                        <span class="skill-item">ASP.NET Core</span>
+                        <span class="skill-item">Django REST</span>
+                        <span class="skill-item">ASP.NET MVC</span>
+                        <span class="skill-item">Angular</span>
+                        <span class="skill-item">EF Core</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Databases</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">SQL Server</span>
+                        <span class="skill-item">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Git/GitHub</span>
+                        <span class="skill-item">Postman</span>
+                        <span class="skill-item">VS Code</span>
+                        <span class="skill-item">IntelliJ</span>
+                        <span class="skill-item">JWT Auth</span>
+                        <span class="skill-item">RESTful APIs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">Let's work together on your next project</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <a href="mailto:sherify766@gmail.com">sherify766@gmail.com</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h4>Phone</h4>
+                        <a href="tel:+201064031239">+20 106 403 1239</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Location</h4>
+                        <p>Cairo, Egypt</p>
+                    </div>
+                </div>
+                
+                <div class="contact-social">
+                    <a href="https://github.com/Youssef-Sheriff" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/youssef--sherif" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:sherify766@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Youssef Sherif. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+</body>
 </html>
