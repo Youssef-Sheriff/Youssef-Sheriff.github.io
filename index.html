@@ -3,39 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Youssef Sherif - Software Engineer & Backend Developer">
-    <title>Youssef Sherif | Software Engineer</title>
+    <meta name="description" content="Youssef Sherif - Software Engineer & Backend Developer specializing in Java Spring Boot and .NET Core">
+    <meta name="keywords" content="Software Engineer, Backend Developer, Java, Spring Boot, .NET Core, Cairo">
+    <meta name="author" content="Youssef Sherif">
+    <title>Youssef Sherif | Software Engineer & Backend Developer</title>
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Link to CSS file -->
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <a href="#home" class="logo">Youssef<span>.</span></a>
-                
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#experience" class="nav-link">Experience</a></li>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#skills" class="nav-link">Skills</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-                
-                <div class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">Youssef</span>
+                <span class="logo-dot">.</span>
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
@@ -44,70 +49,133 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h3>Hello, I'm</h3>
-                <h1>Youssef Sherif</h1>
-                <h2>Software Engineer & Backend Developer</h2>
-                <p>Backend Developer specializing in .NET Core and Java Spring Boot. Building scalable systems and solving complex problems.</p>
-                
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Contact Me</a>
-                    <a href="#projects" class="btn btn-secondary">View Projects</a>
-                    <!-- <a href="#Resume" class="btn hero-buttons"  onclick="window.open('./assets/my_resume.pdf', '_blank')">Resume</a> -->
-                    <a href="./assets/Youssef_Sherif_Resume.pdf" target="_blank" class="btn btn-primary">Resume</a>
-
+                <div class="hero-text">
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 class="hero-title">Youssef Sherif</h1>
+                    <h2 class="hero-subtitle">
+                        <span class="typed-text"></span>
+                        <span class="cursor">&nbsp;</span>
+                    </h2>
+                    <p class="hero-description">
+                        Backend Developer specializing in building scalable systems with .NET Core and Java Spring Boot. 
+                        Passionate about creating efficient RESTful APIs and solving complex problems.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i> Get In Touch
+                        </a>
+                        <a href="#projects" class="btn btn-outline">
+                            <i class="fas fa-code"></i> View Work
+                        </a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/Youssef-Sheriff" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/youssef--sherif" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:sherify766@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
                 </div>
-                
-                <div class="social-links">
-                    <a href="https://github.com/Youssef-Sheriff" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/youssef--sherif" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:sherify766@gmail.com"><i class="fas fa-envelope"></i></a>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <div class="floating-card card-1">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="floating-card card-4">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
             
             <div class="about-content">
                 <div class="about-text">
                     <h3>Backend Developer & Problem Solver</h3>
-                    <p>I'm a fresh Computer Science graduate from Modern Academy with a <strong>GPA of 3.5/4.0</strong>. I specialize in building scalable backend systems using .NET Core and Java Spring Boot.</p>
+                    <p>
+                        I'm a fresh Computer Science graduate from Modern Academy with a <strong>GPA of 3.5/4.0</strong>. 
+                        My journey in software development started with a passion for problem-solving, which led me to 
+                        competitive programming and eventually to backend development.
+                    </p>
+                    <p>
+                        I specialize in building <strong>scalable backend systems</strong> using .NET Core and Java Spring Boot. 
+                        My experience includes developing RESTful APIs, implementing authentication systems, and working with 
+                        various databases including SQL Server and MySQL.
+                    </p>
+                    <p>
+                        Beyond coding, I've had the privilege of <strong>mentoring over 150 students</strong> in programming 
+                        fundamentals through the Digital Egypt Cubs Initiative. I'm also an active competitive programmer, 
+                        having participated in ICPC contests and secured top positions in various programming competitions.
+                    </p>
                     
-                    <p>My experience includes developing RESTful APIs, implementing authentication systems, and working with SQL Server and MySQL databases. I've also mentored over 150 students in programming fundamentals.</p>
-                    
-                    <div class="about-info">
-                        <div class="info-item">
+                    <div class="about-highlights">
+                        <div class="highlight-item">
                             <i class="fas fa-graduation-cap"></i>
                             <div>
-                                <strong>Education</strong>
-                                <p>B.Sc. Computer Science - GPA: 3.5/4.0</p>
+                                <h4>Education</h4>
+                                <p>B.Sc. Computer Science<br>GPA: 3.5/4.0</p>
                             </div>
                         </div>
-                        <div class="info-item">
+                        <div class="highlight-item">
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
-                                <strong>Location</strong>
-                                <p>Cairo, Egypt</p>
+                                <h4>Location</h4>
+                                <p>Cairo, Egypt<br>Open to opportunities</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-trophy"></i>
+                            <div>
+                                <h4>Achievements</h4>
+                                <p>ICPC Contestant<br>1st Place MEC Competition</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="stats">
-                    <div class="stat-box">
-                        <h3>5+</h3>
-                        <p>Projects Completed</p>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="stat-number" data-target="5">0</h3>
+                        <p>Major Projects</p>
                     </div>
-                    <div class="stat-box">
-                        <h3>150+</h3>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="stat-number" data-target="150">0</h3>
                         <p>Students Mentored</p>
                     </div>
-                    <div class="stat-box">
-                        <h3>3</h3>
-                        <p>Internships</p>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3 class="stat-number" data-target="4">0</h3>
+                        <p>Competitions Won</p>
                     </div>
                 </div>
             </div>
@@ -117,50 +185,78 @@
     <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
-            <h2 class="section-title">Experience</h2>
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-subtitle">My professional journey</p>
+            </div>
             
             <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
                     <div class="timeline-content">
-                        <div class="timeline-date">Jul 2025 - Oct 2025</div>
+                        <span class="timeline-date">
+                            <i class="far fa-calendar-alt"></i> Jul 2025 - Oct 2025
+                        </span>
                         <h3>Full Stack Intern</h3>
-                        <h4>Fixed Solutions (Fixed Global)</h4>
-                        <p>Developed CRUD APIs using Django REST Framework with authentication and validation. Built CLI tools using Node.js to automate workflows.</p>
-                        <div class="tags">
-                            <span>Django</span>
-                            <span>REST API</span>
-                            <span>Node.js</span>
+                        <h4>Fixed Solutions (Fixed Global) · Nasr City, Egypt</h4>
+                        <ul>
+                            <li>Developed and tested CRUD APIs using Django REST Framework, implementing models, views, and serializers</li>
+                            <li>Implemented comprehensive input validation and authentication mechanisms</li>
+                            <li>Built CLI tools using Node.js (Commander.js) to automate development tasks and streamline internal workflows</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Django</span>
+                            <span class="tag">REST API</span>
+                            <span class="tag">Node.js</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
                     <div class="timeline-content">
-                        <div class="timeline-date">Dec 2024 - Jul 2025</div>
+                        <span class="timeline-date">
+                            <i class="far fa-calendar-alt"></i> Dec 2024 - Jul 2025
+                        </span>
                         <h3>Programming Instructor</h3>
-                        <h4>Digital Egypt Cubs Initiative (DECI)</h4>
-                        <p>Mentored 150+ students in programming fundamentals and algorithms. Designed learning materials and guided students in building applications.</p>
-                        <div class="tags">
-                            <span>Teaching</span>
-                            <span>Mentoring</span>
-                            <span>Algorithms</span>
+                        <h4>Digital Egypt Cubs Initiative (DECI) · Maadi, Egypt</h4>
+                        <ul>
+                            <li>Mentored 150+ students in programming fundamentals, algorithms, and software engineering concepts</li>
+                            <li>Designed structured learning materials and curricula for different skill levels</li>
+                            <li>Guided students in building practical applications and developing problem-solving skills</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Teaching</span>
+                            <span class="tag">Mentoring</span>
+                            <span class="tag">Algorithms</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
                     <div class="timeline-content">
-                        <div class="timeline-date">Jun 2024 - Dec 2024</div>
-                        <h3>.NET Web Developer Trainee</h3>
-                        <h4>Digital Egypt Pioneers Initiative (DEPI) / ITI</h4>
-                        <p>Built RESTful APIs using ASP.NET Core, EF Core, and SQL Server. Developed Library Management System following MVC patterns.</p>
-                        <div class="tags">
-                            <span>.NET Core</span>
-                            <span>SQL Server</span>
-                            <span>Agile</span>
+                        <span class="timeline-date">
+                            <i class="far fa-calendar-alt"></i> Jun 2024 - Dec 2024
+                        </span>
+                        <h3>.NET Web Developer / Full Stack Trainee</h3>
+                        <h4>Digital Egypt Pioneers Initiative (DEPI) / ITI · Cairo, Egypt</h4>
+                        <ul>
+                            <li>Built and tested RESTful APIs using C#, ASP.NET Core, EF Core, and SQL Server</li>
+                            <li>Implemented authentication, validation, and error handling mechanisms</li>
+                            <li>Developed Library Management System with CRUD operations and MVC patterns</li>
+                            <li>Collaborated in team environment following Agile practices</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">.NET Core</span>
+                            <span class="tag">SQL Server</span>
+                            <span class="tag">Agile</span>
                         </div>
                     </div>
                 </div>
@@ -171,87 +267,112 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Recent work and contributions</p>
+            </div>
             
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-tag">Current</span>
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Youssef-Sheriff/employee-management-system" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Current Project</span>
                         <h3>Employee Management System</h3>
+                        <p>Backend system for managing employees and departments using RESTful APIs with comprehensive validation and error handling. Built with modular architecture following OOP principles.</p>
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>MySQL</span>
+                            <span>REST API</span>
+                        </div>
                     </div>
-                    <p>Backend system for managing employees and departments using RESTful APIs with validation and error handling.</p>
-                    <div class="project-tech">
-                        <span>Java</span>
-                        <span>Spring Boot</span>
-                        <span>MySQL</span>
-                    </div>
-                    <a href="https://github.com/Youssef-Sheriff/employee-management-system" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View Code
-                    </a>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-tag">Graduation</span>
-                        <h3>BoneX</h3>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Youssef-Sheriff/BoneX" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
                     </div>
-                    <p>AI-assisted X-ray analysis platform. Lead backend developer implementing authentication and appointment booking APIs.</p>
-                    <div class="project-tech">
-                        <span>ASP.NET Core</span>
-                        <span>SQL Server</span>
-                        <span>JWT</span>
+                    <div class="project-content">
+                        <span class="project-category">Graduation Project</span>
+                        <h3>BoneX - AI X-ray Analysis</h3>
+                        <p>AI-assisted X-ray analysis platform. Lead backend developer implementing authentication, profile management, and appointment booking APIs with clean architecture.</p>
+                        <div class="project-tech">
+                            <span>ASP.NET Core</span>
+                            <span>EF Core</span>
+                            <span>SQL Server</span>
+                            <span>JWT</span>
+                        </div>
                     </div>
-                    <a href="https://github.com/Youssef-Sheriff/BoneX" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View Code
-                    </a>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-tag">Freelance</span>
-                        <h3>Ne3ma</h3>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Youssef-Sheriff/Ne3ma" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
                     </div>
-                    <p>Food waste reduction platform with role-based API access and comprehensive food item management.</p>
-                    <div class="project-tech">
-                        <span>ASP.NET Core</span>
-                        <span>EF Core</span>
-                        <span>SQL Server</span>
+                    <div class="project-content">
+                        <span class="project-category">Freelance</span>
+                        <h3>Ne3ma - Food Waste Reduction</h3>
+                        <p>Backend for food waste reduction platform with role-based API access and comprehensive food item management. Collaborated with mobile team for seamless integration.</p>
+                        <div class="project-tech">
+                            <span>ASP.NET Core</span>
+                            <span>EF Core</span>
+                            <span>SQL Server</span>
+                        </div>
                     </div>
-                    <a href="https://github.com/Youssef-Sheriff/Ne3ma" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View Code
-                    </a>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-tag">Personal</span>
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Youssef-Sheriff/SurveyBasket" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Personal Project</span>
                         <h3>Survey Basket</h3>
+                        <p>Survey and voting platform following MVC pattern with secure input validation via FluentValidation. Features comprehensive survey creation and results visualization.</p>
+                        <div class="project-tech">
+                            <span>ASP.NET MVC</span>
+                            <span>EF Core</span>
+                            <span>SQL Server</span>
+                        </div>
                     </div>
-                    <p>Survey and voting platform following MVC pattern with secure validation via FluentValidation.</p>
-                    <div class="project-tech">
-                        <span>ASP.NET MVC</span>
-                        <span>EF Core</span>
-                        <span>SQL Server</span>
-                    </div>
-                    <a href="https://github.com/Youssef-Sheriff/SurveyBasket" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View Code
-                    </a>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-tag">Training</span>
-                        <h3>LibraCore</h3>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Youssef-Sheriff/LibraCore" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
                     </div>
-                    <p>Library management system with CRUD operations, MVC architecture, and database modeling.</p>
-                    <div class="project-tech">
-                        <span>ASP.NET Core</span>
-                        <span>EF Core</span>
-                        <span>SQL Server</span>
+                    <div class="project-content">
+                        <span class="project-category">Training Project</span>
+                        <h3>LibraCore - Library Management</h3>
+                        <p>Library management system with CRUD operations, MVC architecture, and comprehensive database modeling. Developed during DEPI training program.</p>
+                        <div class="project-tech">
+                            <span>ASP.NET Core</span>
+                            <span>EF Core</span>
+                            <span>SQL Server</span>
+                        </div>
                     </div>
-                    <a href="https://github.com/Youssef-Sheriff/LibraCore" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View Code
-                    </a>
                 </div>
             </div>
         </div>
@@ -260,50 +381,125 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
             
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Languages</h3>
-                    <div class="skill-list">
-                        <span class="skill-item">Java</span>
-                        <span class="skill-item">C#</span>
-                        <span class="skill-item">Python</span>
-                        <span class="skill-item">C++</span>
-                        <span class="skill-item">SQL</span>
-                        <span class="skill-item">JavaScript</span>
+            <div class="skills-container">
+                <div class="skill-category" data-aos="fade-up">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-hashtag"></i>
+                            <span>C#</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-copyright"></i>
+                            <span>C++</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <h3><i class="fas fa-layer-group"></i> Frameworks</h3>
-                    <div class="skill-list">
-                        <span class="skill-item">Spring Boot</span>
-                        <span class="skill-item">ASP.NET Core</span>
-                        <span class="skill-item">Django REST</span>
-                        <span class="skill-item">ASP.NET MVC</span>
-                        <span class="skill-item">Angular</span>
-                        <span class="skill-item">EF Core</span>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-header">
+                        <i class="fas fa-layer-group"></i>
+                        <h3>Frameworks & Libraries</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>Spring Boot</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>ASP.NET Core</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Django REST</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>ASP.NET MVC</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-angular"></i>
+                            <span>Angular</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>EF Core</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> Databases</h3>
-                    <div class="skill-list">
-                        <span class="skill-item">SQL Server</span>
-                        <span class="skill-item">MySQL</span>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>SQL Server</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Tools</h3>
-                    <div class="skill-list">
-                        <span class="skill-item">Git/GitHub</span>
-                        <span class="skill-item">Postman</span>
-                        <span class="skill-item">VS Code</span>
-                        <span class="skill-item">IntelliJ</span>
-                        <span class="skill-item">JWT Auth</span>
-                        <span class="skill-item">RESTful APIs</span>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & Technologies</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git/GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-vial"></i>
+                            <span>Postman</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>VS Code</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>IntelliJ IDEA</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>JWT Auth</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-network-wired"></i>
+                            <span>RESTful APIs</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -313,40 +509,87 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-subtitle">Let's work together on your next project</p>
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together</p>
+            </div>
             
             <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-card">
-                        <i class="fas fa-envelope"></i>
-                        <h4>Email</h4>
-                        <a href="mailto:sherify766@gmail.com">sherify766@gmail.com</a>
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Let's Connect</h3>
+                    <p>I'm currently open to new opportunities and collaborations. Whether you have a question or just want to say hi, feel free to reach out!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <a href="mailto:sherify766@gmail.com">sherify766@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <a href="tel:+201064031239">+20 106 403 1239</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>Cairo, Egypt</p>
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="contact-card">
-                        <i class="fas fa-phone"></i>
-                        <h4>Phone</h4>
-                        <a href="tel:+201064031239">+20 106 403 1239</a>
-                    </div>
-                    
-                    <div class="contact-card">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <h4>Location</h4>
-                        <p>Cairo, Egypt</p>
+                    <div class="contact-social">
+                        <a href="https://github.com/Youssef-Sheriff" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/youssef--sherif" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:sherify766@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
                     </div>
                 </div>
                 
-                <div class="contact-social">
-                    <a href="https://github.com/Youssef-Sheriff" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/youssef--sherif" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:sherify766@gmail.com">
-                        <i class="fas fa-envelope"></i>
-                    </a>
+                <div class="contact-form-container" data-aos="fade-left">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder=" " required aria-label="Your name">
+							<label for="name">Your Name</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder=" " required aria-label="Your email">
+							<label for="email">Your Email</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder=" " required aria-label="Subject">
+							<label for="subject">Subject</label>	
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder=" " required aria-label="Message"></textarea>
+							<label for="message">Message</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -355,16 +598,19 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Youssef Sherif. All Rights Reserved.</p>
+            <div class="footer-content">
+                <p>&copy; 2025 Youssef Sherif. All rights reserved.</p>
+                <p>Built with passion and dedication</p>
+            </div>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button class="scroll-top" id="scrollTop">
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- Link to JavaScript file -->
+    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
