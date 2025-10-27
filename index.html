@@ -13,9 +13,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- AOS CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
     
@@ -24,9 +21,9 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
         <div class="container nav-container">
-            <a href="#home" class="logo">
+            <a href="#" class="logo">
                 <span class="logo-text">Youssef</span>
                 <span class="logo-dot">.</span>
             </a>
@@ -75,7 +72,7 @@
                         <a href="https://github.com/Youssef-Sheriff" target="_blank" aria-label="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/youssef-sherif" target="_blank" aria-label="LinkedIn">
+                        <a href="https://linkedin.com/in/youssef--sherif" target="_blank" aria-label="LinkedIn">
                             <i class="fab fa-linkedin"></i>
                         </a>
                         <a href="mailto:sherify766@gmail.com" aria-label="Email">
@@ -85,7 +82,6 @@
                 </div>
                 <div class="hero-image">
                     <div class="image-wrapper">
-                        <img src="https://avatars.githubusercontent.com/u/156745166?v=4" alt="Youssef Sherif" class="profile-img">
                         <div class="floating-card card-1">
                             <i class="fab fa-java"></i>
                         </div>
@@ -278,7 +274,7 @@
             
             <div class="projects-grid">
                 <div class="project-card" data-aos="fade-up">
-                    <div class="project-image" style="background-image: url('https://www.cutehr.io/wp-content/uploads/2020/05/employees-dashboard-cuteHR-1.jpg'); background-size: cover; background-position: center;">
+                    <div class="project-image">
                         <div class="project-overlay">
                             <a href="https://github.com/Youssef-Sheriff/employee-management-system" target="_blank" class="project-link">
                                 <i class="fab fa-github"></i> View Code
@@ -299,7 +295,7 @@
                 </div>
 
                 <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-image" style="background-image: url('https://www.mtsc.ai/wp-content/uploads/2024/02/%E8%83%B8%E8%85%94X%E5%85%89AI%E8%BC%94%E5%8A%A9%E7%AF%A9%E6%AA%A2%E7%B3%BB%E7%B5%B1_UI-heatmap-1000x539.png'); background-size: cover; background-position: center;">
+                    <div class="project-image">
                         <div class="project-overlay">
                             <a href="https://github.com/Youssef-Sheriff/BoneX" target="_blank" class="project-link">
                                 <i class="fab fa-github"></i> View Code
@@ -320,7 +316,7 @@
                 </div>
 
                 <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-image" style="background-image: url('https://cdn.dribbble.com/userupload/38184432/file/original-44a130a0e0df8cb728e8b8cde253a6bd.png?resize=752x&vertical=center'); background-size: cover; background-position: center;">
+                    <div class="project-image">
                         <div class="project-overlay">
                             <a href="https://github.com/Youssef-Sheriff/Ne3ma" target="_blank" class="project-link">
                                 <i class="fab fa-github"></i> View Code
@@ -340,7 +336,7 @@
                 </div>
 
                 <div class="project-card" data-aos="fade-up">
-                    <div class="project-image" style="background-image: url('https://electionrunner.com/v3/img/ipad-dashboard.jpg'); background-size: cover; background-position: center;">
+                    <div class="project-image">
                         <div class="project-overlay">
                             <a href="https://github.com/Youssef-Sheriff/SurveyBasket" target="_blank" class="project-link">
                                 <i class="fab fa-github"></i> View Code
@@ -360,7 +356,7 @@
                 </div>
 
                 <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-image" style="background-image: url('https://i.ytimg.com/vi/LOg77Z7zLHU/maxresdefault.jpg'); background-size: cover; background-position: center;">
+                    <div class="project-image">
                         <div class="project-overlay">
                             <a href="https://github.com/Youssef-Sheriff/LibraCore" target="_blank" class="project-link">
                                 <i class="fab fa-github"></i> View Code
@@ -559,7 +555,7 @@
                         <a href="https://github.com/Youssef-Sheriff" target="_blank" aria-label="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/youssef-sherif" target="_blank" aria-label="LinkedIn">
+                        <a href="https://linkedin.com/in/youssef--sherif" target="_blank" aria-label="LinkedIn">
                             <i class="fab fa-linkedin"></i>
                         </a>
                         <a href="mailto:sherify766@gmail.com" aria-label="Email">
@@ -569,25 +565,25 @@
                 </div>
                 
                 <div class="contact-form-container" data-aos="fade-left">
-                    <form class="contact-form" id="contactForm" action="mailto:sherify766@gmail.com" method="POST" enctype="text/plain">
+                    <form class="contact-form" id="contactForm">
                         <div class="form-group">
-                            <input type="text" id="name" name="name" required>
-                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder=" " required aria-label="Your name">
+							<label for="name">Your Name</label>
                         </div>
                         
                         <div class="form-group">
-                            <input type="email" id="email" name="email" required>
-                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder=" " required aria-label="Your email">
+							<label for="email">Your Email</label>
                         </div>
                         
                         <div class="form-group">
-                            <input type="text" id="subject" name="subject" required>
-                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder=" " required aria-label="Subject">
+							<label for="subject">Subject</label>	
                         </div>
                         
                         <div class="form-group">
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder=" " required aria-label="Message"></textarea>
+							<label for="message">Message</label>
                         </div>
                         
                         <button type="submit" class="btn btn-primary">
@@ -616,13 +612,5 @@
 
     <!-- JavaScript -->
     <script src="script.js"></script>
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
-    </script>
 </body>
 </html>
